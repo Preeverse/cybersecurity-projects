@@ -1,4 +1,4 @@
-# Splunk - A SIEM Solution
+# Setting up a SIEM Solution with Splunk Enterprise in a Windows Domain Lab
 
 ## Overview
 
@@ -11,7 +11,7 @@ In this project, I configured and deployed **Splunk Enterprise** within a Window
 ---
 
 ## Lab Topology
-![Lab Topology](Screenshots\Lab_topology.png)
+![Lab Topology](Screenshots/Lab_topology.png)
 
 ---
 
@@ -23,23 +23,23 @@ In this project, I configured and deployed **Splunk Enterprise** within a Window
 - Created a local Splunk admin account with a secure password for accessing the Splunk web application.
     
 
-![Splunk_installer](Screenshots\Splunk_installer.png)
+![Splunk_installer](Screenshots/Splunk_installer.png)
 
 
 **_Key insight:_** Installing with domain admin privileges facilitates log access from networked devices.
 
-![domain_account](Screenshots\domain_account.png)
+![domain_account](Screenshots/domain_account.png)
 
  - In addition to this,  _A local account with a password needs to be created that will be used to log into the Splunk Enterprise web application._
 
  - In the fly-out window, in the **DATA** pane, select **Forwarding and receiving**.
    
-![Data_pane](Screenshots\Data_pane.png)
+![Data_pane](Screenshots/Data_pane.png)
 
 
  - Added Port details in the Receive Data section.
 
-![Port](Screenshots\Port.png)
+![Port](Screenshots/Port.png)
 
 **_Note:_** _The_ **_Splunk Enterprise_** _application was configured to listen for network traffic. The Windows Firewall needs to be configured to ensure the traffic can be received on the port._
 
@@ -57,15 +57,15 @@ All set! Now lets go to Client configuration
 
 - Installed and configured the Splunk Universal Forwarder on domain member workstations and servers to forward event logs to the Splunk server.
 
-![splunk_client](Screenshots\splunk_client.png)
+![splunk_client](Screenshots/splunk_client.png)
 
 
 - Configured forwarding using domain admin credentials for authentication.
 
-![forwarder_domain](Screenshots\forwarder_domain.png)
+![forwarder_domain](Screenshots/forwarder_domain.png)
 - Entered Splunk server IP and listening port on clients to ensure proper log forwarding.
 
-![splunk_hostname](Screenshots\splunk_hostname.png)
+![splunk_hostname](Screenshots/splunk_hostname.png)
 
 ---
 
@@ -75,20 +75,20 @@ All set! Now lets go to Client configuration
 - Logged into the Splunk Enterprise web UI on the server using the local Splunk admin account.
 - Configured new server class names and selected specific event log types to monitor.
 
-![Server_class](Screenshots\Server_class.png)
+![Server_class](Screenshots/Server_class.png)
 
  - In **Select Event Logs** pane, chose the necessary event log types.
 
-![Event_logs](Screenshots\Event_logs.png)
+![Event_logs](Screenshots/Event_logs.png)
 
 
 - Verified successful forwarding of logs from clients to Splunk and performed sample event searches.
 
-![Search](Screenshots\Search.png)
+![Search](Screenshots/Search.png)
 
 - Below is a sample search result of Event Logs forwarded from the Splunk Client to the Splunk Server.
 
-![Sample_Result](Screenshots\Sample_Result.png)
+![Sample_Result](Screenshots/Sample_Result.png)
 
 ---
 
