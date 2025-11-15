@@ -1,0 +1,52 @@
+# Obsidian metadata
+.obsidian/
+
+# VS Code workspace (optional)
+.vscode/
+
+# Node, Python, or tool-specific (if added later)
+__pycache__/
+*.pyc
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# Temporary or backup files
+*.tmp
+*.temp
+*.bak
+*.swp
+~*
+
+# Logs
+*.log
+# Obsidian metadata
+.obsidian/
+
+# VS Code workspace (optional)
+.vscode/
+
+# Node, Python, or tool-specific (if added later)
+__pycache__/
+*.pyc
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# Temporary or backup files
+*.tmp
+*.temp
+*.bak
+*.swp
+~*
+
+# Logs
+*.log

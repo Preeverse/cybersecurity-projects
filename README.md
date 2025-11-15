@@ -3,18 +3,14 @@ This portfolio showcases my practical experience in cybersecurity through hands-
 
 ## Projects
 
-### SIEM
-- **Splunk** – Lab exercises for setting up Splunk Enterprise, configuring log forwarding, and searching event logs.
-- **Wazuh** – Planned experiments for log collection, alerting, and security monitoring.
+### [SIEM](Projects/SIEM/SIEM.md)
+- [Splunk](Projects/SIEM/Splunk/Splunk.md) – Lab exercises for setting up Splunk Enterprise, configuring log forwarding, and searching event logs.
+- [Wazuh](Projects/SIEM/Wazuh/Wazuh.md) – Planned experiments for log collection, alerting, and security monitoring.
 
-## Scripts
+## [Scripts](Scripts/scripts.md)
 Automation scripts for SIEM, network, and hardening projects.
 
 ## About Me
 - Name: Preetha Paindupal Ramadoss
 - Email: preethudoss@gmail.com  
 - LinkedIn: [linkedin.com/in/preetha-pr](https://www.linkedin.com/in/preetha-pr/)
-
-## License
-- Code/Scripts: MIT License  
-- Notes/Screenshots/Documentation: CC BY-NC 4.0
