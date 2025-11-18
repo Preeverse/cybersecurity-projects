@@ -8,5 +8,5 @@
 - **Create dashboards and reports** for security monitoring, compliance, and auditing.
 
 ## SIEM tools explored in this lab are:
-- **Splunk**: A leading commercial SIEM solution for log management and real-time event correlation. [Click here](Splunk/Splunk_Installation.md) for Splunk Project.
-- **Wazuh**: An open-source SIEM system focused on log collection, intrusion detection, and vulnerability monitoring. [Click here](Wazuh/Wazuh.md) for Wazuh Project.
+- **Splunk**: A leading commercial SIEM solution for log management and real-time event correlation.
+- **Wazuh**: An open-source SIEM system focused on log collection, intrusion detection, and vulnerability monitoring.
