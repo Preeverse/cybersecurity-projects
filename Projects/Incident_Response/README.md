@@ -21,6 +21,8 @@ index=windows (EventCode=4625 OR EventCode=4740)
 | table _time, EventType, TargetUserName, Account_Name, Source_Network_Address, CallerHost, Workstation_Name, Message
 | sort _time
 
+
+Alert creation and Dashboard
   ## Project Objective (What you will demonstrate)
 
 You will show:
