@@ -1,4 +1,4 @@
-# Splunk Log Analysis – Failed Logons & Account Lockouts
+# Splunk Log Analysis – Failed Logons , Account Lockouts & Successful Brute Force
 
 ## Objective
 
@@ -149,7 +149,6 @@ index=windows (EventCode=4625 OR EventCode=4624)
 ## Next Steps
 - Investigate the account for unauthorized access and reset credentials if necessary.
 - Ensure **account lockout policy** is configured and enforced.
-- Enable alerts in Splunk for suspicious patterns of repeated failed logons followed by success.
 - Review associated systems for signs of lateral movement or further compromise.
 - Consider implementing **multi-factor authentication (MFA)** for high-risk accounts.
 
