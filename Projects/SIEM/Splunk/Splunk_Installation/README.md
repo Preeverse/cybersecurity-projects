@@ -47,7 +47,7 @@ In this project, I configured and deployed **Splunk Enterprise** within a Window
 
 ### **Step2: Windows Defender Firewall Rule to allow Splunk Activity**
 
-On **Windows Defender Firewall with Advanced Security**, selected **Inbound Rules** and  **New Rule** was set. Selected **Port** on the **Rule Type** window. Entered the port number in the **Specific local ports** field: Specified a meaningful custom name like "Splunk" and a description for the rule.
+On **Windows Defender Firewall with Advanced Settings**, selected **Inbound Rules** and  **New Rule** was set. Selected **Port** on the **Rule Type** window. Entered the port number in the **Specific local ports** field: Specified a meaningful custom name like "Splunk" and a description for the rule.
 
 All set! Now lets go to Client configuration
 

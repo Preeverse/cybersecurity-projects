@@ -4,6 +4,9 @@ A hands-on, compact Splunk project designed to showcase **log analysis**, **thre
 
 ---
 
+## Splunk
+Splunk Enterprise is the data collection, indexing, and visualization engine for operational intelligence.
+
 ##  Splunk Projects
 This lab demonstrates:
 
