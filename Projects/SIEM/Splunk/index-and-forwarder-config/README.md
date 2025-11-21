@@ -31,11 +31,13 @@ This is the foundation for structured Windows event log ingestion and enables al
 ### Steps  
 1. Click **New Index**  
 ![Index-Nav](screenshots/index_nav.png)
+
 2. Configure the following:  
    - **Index Name:** `windows`  
    - **Data Type:** Events  
    - Leave other settings as default  
-3. Save the index and verify its creation by searchign it in Search Index field.
+
+3. Save the index and verify its creation by searching it in Search Index field.
 ![windows-verifyindex](screenshots/windows_index.png)
 
 ---
@@ -49,7 +51,7 @@ Universal Forwarder config files are stored in:
 
 Edit the file: `inputs.conf` to include the necessary Windows logs. Here we mention Security, System and Application Event logs.
 
-![inputs-conf](screenshots\inputs_conf.png)
+![inputs-conf](screenshots/inputs_conf.png)
 
 ### Explanation  
 
