@@ -1,7 +1,7 @@
 Windows Authentication Security & Brute Force Detection – Analyst Report
 
-Prepared by: [Your Name]
-Date: [Insert Date]
+Prepared by: Preetha Paindupal Ramadoss
+Date: 22-11-2025
 Environment:
 
 DC01 – Domain Controller (Windows Server)
