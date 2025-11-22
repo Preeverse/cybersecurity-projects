@@ -1,4 +1,4 @@
-# Index Creation & Universal Forwarder Inputs Configuration  
+# Index Creation, Universal Forwarder Inputs File, Alerts and Dashboard Configuration
 
 ---
 
@@ -87,7 +87,60 @@ You should see Security, System, and Application event logs from DC01.
 
 ---
 
-# 4️⃣ Conclusion 
+# 4️⃣ Alert Configuration
+
+Following the log ingestion and indexing, spl queries can be saved as **alerts** to trigger emails, incident ticket creation and webhooks pointing SOAR playbook (e.g. block IP) based on its severity.
+
+Below is an example of Alert creation to Brute force attempts.
+
+1. Run the SPL query in Search & Reporting.
+```index=windows EventCode=4625
+| stats count by src_ip, user, host
+| where count > 10
+| sort - count
+```
+
+2. Click Save As → Alert.
+
+3. Configure the following and do a test run to verify successful alert creation.
+
+| Setting             | Value                               |
+|---------------------|--------------------------------------|
+| Alert Type          | Scheduled                            |
+| Run Every           | 5 minutes                            |
+| Trigger Condition   | Number of results > 0                |
+| Trigger Actions     | Email / Notable Event / Webhook      |
+| Severity            | High                                 |
+
+---
+
+# 5️⃣ Dashboard Configuration
+
+Dashboards provide visual insights into security and audit activities, helping identify suspicious patterns.
+
+Below is the workflow for dashboard creation
+
+1. Create a Dashboard → Define name, permissions, and layout.
+2. Add Panels → Each panel represents a metric, chart, or table.
+3. Assign SPL Query to Panel → The search that generates the data.
+4. Set Visualization Type → Table, chart, single value, heatmap, etc.
+5. Save Dashboard → View real-time or historical results.
+
+# 6️⃣ Saved Searches
+
+A **Saved Search** is a Splunk search (SPL query) that is stored centrally for reuse.  
+It can be used in:
+
+- Dashboards (as panels)
+- Alerts
+- Reports
+- Scheduled jobs
+
+This helps to avoid duplication, maintain consistency, and simplify management of queries.
+
+---
+
+#  Conclusion 
   
 The same methodology used here can be applied to a wide range of systems, including:
 
@@ -106,22 +159,3 @@ Following this standardized workflow ensures:
 - A more manageable and scalable security monitoring environment  
 
 ---
-
-# 5️⃣ What This Enables Next 
-
-Completing this step enables:
-
-- Brute-force attack simulation (Hydra)  
-- Detection of Event ID **4625** (failed logons)  
-- Detection of Event ID **4740** (account lockouts)  
-- Dashboard creation  
-- Use-case development and alerting  
-- Full SIEM visibility into Windows authentication logs  
-
----
-
-
-
-
-
-
