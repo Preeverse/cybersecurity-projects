@@ -3,12 +3,13 @@
 ---
 
 ##  Objective  
-This project unit focuses on two essential components of Splunk ingestion setup:
+This project unit focuses on essential components of Splunk ingestion setup:
 
 1. Creating a custom index in Splunk Enterprise (server side)  
-2. Configuring the Splunk Universal Forwarder (client side) to send logs into that specific index  
+2. Configuring the Splunk Universal Forwarder (client side) to send logs into that specific index 
+3. Configuring Alerts and Dashboard using SPL queries
 
-This is the foundation for structured Windows event log ingestion and enables all detection and analysis tasks later.
+This is the foundation for structured log ingestion and enables all detection and analysis tasks later and below involves sample of windows event log ingestion.
 
 ---
 
