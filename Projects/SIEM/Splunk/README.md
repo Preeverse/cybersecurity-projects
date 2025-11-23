@@ -11,6 +11,6 @@ Splunk Enterprise is the data collection, indexing, and visualization engine for
 This lab demonstrates:
 
 - [Installing & configuring Splunk Enterprise](Splunk_Installation)
-- [Ingesting logs and Creating indexes, dashboards, alerts, and correlation searches](splunk-log-analysis)
-- [Performing detection & log analysis](index-alert-dashboard_config)
+- [Ingesting logs and Creating indexes, dashboards, alerts, and correlation searches](index-alert-dashboard_config)
+- [Performing detection & log analysis](splunk-log-analysis)
 ---
