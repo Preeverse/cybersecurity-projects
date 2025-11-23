@@ -10,9 +10,7 @@ Splunk Enterprise is the data collection, indexing, and visualization engine for
 ##  Splunk Projects
 This lab demonstrates:
 
-- [Installing & configuring Splunk Enterprise](/Projects/SIEM/Splunk/Splunk_Installation)
-- Ingesting Windows, Linux, Sysmon, and Firewall logs
-- Performing detection & threat-hunting analysis
-- Creating dashboards, alerts, and correlation searches
-
+- [Installing & configuring Splunk Enterprise](Splunk_Installation)
+- [Ingesting logs and Creating indexes, dashboards, alerts, and correlation searches](splunk-log-analysis)
+- [Performing detection & log analysis](index-alert-dashboard_config)
 ---
