@@ -89,8 +89,8 @@ Refer [Splunk Log analysis](/projects/siem/splunk/splunk-log-analysis/) covering
 |------|---------|
 | **1. Login Behavior Review** | The analyst checks:<br>• When the account was last successfully used<br>• Whether the user normally logs in from this source<br>• Any suspicious time-of-day activity<br><br>**Splunk Query:**<br>`index=winevent_security EventCode=4624 Account_Name="testuser" | table _time, IP_Address, Workstation_Name`<br><br>**Result:** No successful logins → brute-force unsuccessful. 🖥️ |
 | **2. Lateral Movement Check** | Check for unusual authentications following the brute-force attempt.<br><br>**Splunk Query:**<br>`index=winevent_security EventCode=4624 | where _time >= relative_time(now(), "-30m")`<br><br>**Result:** No lateral movement detected. 🔒 |
-| **3. Security Controls Verification** | The analyst validates preventive controls:<br>• **Account Lockout Policy:** Event 4740 confirms forced lockout → AD Setup<br>• **Password Policy:** Complexity, minimum length, and lockout thresholds verified<br>• **MFA Status:** Checked for privileged accounts → recommended to enable 🌐 |
-| **4. Attacker IP Threat Intelligence Check** | Quick analyst checks:<br>• WHOIS lookup<br>• Reputation lookup (VirusTotal, AbuseIPDB, Talos)<br>• Internal vs external determination<br><br>**Result:** Internal lab IP → known attacker system → Attack Simulation 🔁 |
+| **3. Security Controls Verification** | The analyst validates preventive controls:<br>• **Account Lockout Policy:** Event 4740 confirms forced lockout → AD Setup<br>• **Password Policy:** Complexity, minimum length, and lockout thresholds verified<br>• **MFA Status:** Checked for privileged accounts → recommended to enable |
+| **4. Attacker IP Threat Intelligence Check** | Quick analyst checks:<br>• WHOIS lookup<br>• Reputation lookup (VirusTotal, AbuseIPDB, Talos)<br>• Internal vs external determination<br><br>**Result:** Internal lab IP → known attacker system → Attack Simulation |
 
 
 ---
@@ -136,8 +136,18 @@ Account is already locked out as a containment step by the Active Directory.
 - Defense must be multi-layered  
 - Post-incident hardening improves overall resilience  
 
---
+---
 
 # Summary
 
 This project demonstrates a full end-to-end brute-force attack simulation using Hydra against an Active Directory Domain Controller, with Windows Security Logs forwarded to Splunk for detection. The SIEM generates alerts for excessive failed logins (Event ID 4625) and an account lockout (Event ID 4740), initiating a SOC investigation workflow covering identification, triage, analysis, containment, eradication, and recovery within a controlled lab environment.
+
+---
+
+## 📄 SOC Incident Report
+
+The full SOC Incident Response report for this lab exercise is available here:
+
+[View the Brute Force Attack SOC Report](report.pdf)
+
+---

@@ -1,5 +1,8 @@
-#  Brute Force Attack Detection & SOC Investigation  
-### Splunk SIEM | Active Directory | Hydra | SOC Workflow
+# SOC Incident Response Report 
+
+**Title:** Brute Force Attack Detection & Investigation <br>
+**Environment:** Lab Simulation (Controlled)<br>
+**Prepared by:** Preetha Paindupal Ramadoss<br>
 
 ---
 
@@ -136,5 +139,5 @@ Security controls, SOC workflows, and runbooks have been updated to strengthen f
 
 # References
 
-All supporting steps, screenshots, and lab documentation for this use case are available in the GitHub repository: 
+All supporting steps, screenshots, and lab documentation for this use case are available in the GitHub repository: [Brute-Force Detection Project Github Link](https://github.com/Preeverse/cybersecurity-projects/tree/main/Projects/brute-force-detection)
 
