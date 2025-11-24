@@ -148,6 +148,6 @@ This project demonstrates a full end-to-end brute-force attack simulation using 
 
 The full SOC Incident Response report for this lab exercise is available here:
 
-[View the Brute Force Attack SOC Report](report.pdf)
+[View the Brute Force Attack SOC Report](report/report.pdf)
 
 ---
